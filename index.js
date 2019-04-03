@@ -94,5 +94,6 @@ function notifyUserThereIsNoItemToRemove() {
 }
 
 function removeItemFromCart(itemToRemove) {
-  getCart().splice(0,1);
+  var indexOfItemToRemove = cart.indexOf(itemToRemove);
+  getCart().splice(indexOfItemToRemove,1)
 }
